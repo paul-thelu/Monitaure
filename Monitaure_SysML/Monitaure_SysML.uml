@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ModelElements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ModelElements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_-Z_iQHqHEeqicNFuMRcz6A" name="Monitaure_SysML">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-hvwEHqHEeqicNFuMRcz6A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-iGVYHqHEeqicNFuMRcz6A">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_A-I6AHqIEeqicNFuMRcz6A" name="PPG_ECG_Analysis">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_SBji0Hr4EeqXdJFgHv7pmQ" annotatedElement="_A-I6AHqIEeqicNFuMRcz6A">
+        <body>- No worn device capable of reading ECG &amp; PPG is available&#xD;
+</body>
+      </ownedComment>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_sf5ewHqIEeqicNFuMRcz6A" name="Wearer"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_2PUxcHqIEeqicNFuMRcz6A" name="UseCase2"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_iCjWsHr3EeqXdJFgHv7pmQ" name="Perform PPG reading on Demand" visibility="public"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Ic6j0Hr4EeqXdJFgHv7pmQ" name="Read ECG &amp; PPG"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5LDG0Hr4EeqXdJFgHv7pmQ" name="Perform PPG reading automatically" visibility="public"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CI-EEHr5EeqXdJFgHv7pmQ" name="Perform ECG reading on Demand" visibility="public"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_HwaNsHr5EeqXdJFgHv7pmQ" name="DeriveReqt1" client="_iCjWsHr3EeqXdJFgHv7pmQ" supplier="_Ic6j0Hr4EeqXdJFgHv7pmQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_JA9PkHr5EeqXdJFgHv7pmQ" name="DeriveReqt2" client="_5LDG0Hr4EeqXdJFgHv7pmQ" supplier="_Ic6j0Hr4EeqXdJFgHv7pmQ"/>
+      <packagedElement xmi:type="uml:Abstraction" xmi:id="_Km8V8Hr5EeqXdJFgHv7pmQ" name="DeriveReqt3" client="_CI-EEHr5EeqXdJFgHv7pmQ" supplier="_Ic6j0Hr4EeqXdJFgHv7pmQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_kVWi8Hr7EeqXdJFgHv7pmQ" name="Temperature_Analysis"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_oRb-AHr7EeqXdJFgHv7pmQ" name="Wrist_Gestures_Analysis"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tQjjYHr7EeqXdJFgHv7pmQ" name="Envionmental_Analysis"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_05kjMHr7EeqXdJFgHv7pmQ" name="Bluetooth_Analysis"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-eEJ8HqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-eKQkHqHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hZx0HqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-hZx0XqHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hbnAHqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-hbnAXqHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hbnAnqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-hbnA3qHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hfRYHqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-hfRYXqHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hfRYnqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-hfRY3qHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hgfgHqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-hgfgXqHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hgfgnqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-hgfg3qHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-hgfhHqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-huh8HqHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-huh8XqHEeqicNFuMRcz6A">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-huh8nqHEeqicNFuMRcz6A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_iDApsHr3EeqXdJFgHv7pmQ" base_NamedElement="_iCjWsHr3EeqXdJFgHv7pmQ" id="O1.1" text="The user may ask for a new PPG measurement whenever he wants" base_Class="_iCjWsHr3EeqXdJFgHv7pmQ"/>
+  <Requirements:Requirement xmi:id="_IdBRgHr4EeqXdJFgHv7pmQ" base_NamedElement="_Ic6j0Hr4EeqXdJFgHv7pmQ" base_Class="_Ic6j0Hr4EeqXdJFgHv7pmQ"/>
+  <ModelElements:Problem xmi:id="_SBnNMHr4EeqXdJFgHv7pmQ" base_Comment="_SBji0Hr4EeqXdJFgHv7pmQ"/>
+  <Requirements:Requirement xmi:id="_5LGKNHr4EeqXdJFgHv7pmQ" base_NamedElement="_5LDG0Hr4EeqXdJFgHv7pmQ" id="O2.1" text="The watch may decide itself whenever to read PPG values" base_Class="_5LDG0Hr4EeqXdJFgHv7pmQ"/>
+  <Requirements:Requirement xmi:id="_CJBHcXr5EeqXdJFgHv7pmQ" base_NamedElement="_CI-EEHr5EeqXdJFgHv7pmQ" id="O3.1" text="The user is the only one who can ask for a new ECG reading" base_Class="_CI-EEHr5EeqXdJFgHv7pmQ"/>
+  <Requirements:DeriveReqt xmi:id="_HwgUUHr5EeqXdJFgHv7pmQ" base_DirectedRelationship="_HwaNsHr5EeqXdJFgHv7pmQ" base_Abstraction="_HwaNsHr5EeqXdJFgHv7pmQ"/>
+  <Requirements:DeriveReqt xmi:id="_JA9PkXr5EeqXdJFgHv7pmQ" base_DirectedRelationship="_JA9PkHr5EeqXdJFgHv7pmQ" base_Abstraction="_JA9PkHr5EeqXdJFgHv7pmQ"/>
+  <Requirements:DeriveReqt xmi:id="_Km_ZQHr5EeqXdJFgHv7pmQ" base_DirectedRelationship="_Km8V8Hr5EeqXdJFgHv7pmQ" base_Abstraction="_Km8V8Hr5EeqXdJFgHv7pmQ"/>
+</xmi:XMI>
